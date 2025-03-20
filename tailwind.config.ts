@@ -11,6 +11,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Primary Color - Deep Purple
+        primary: {
+          DEFAULT: "#3C3359",
+          dark: "#2F2F58", // Deep Navy Purple
+        },
+        // Secondary Color - Muted Blue-Grey
+        secondary: {
+          DEFAULT: "#626787",
+        },
+        // Accent Color - Soft Beige
+        accent: {
+          DEFAULT: "#F2E8E1",
+        },
+        // Base colors
+        base: {
+          light: "#FFFFFF",
+          dark: "#2F2F58",
+        },
         orange: {
           400: "#ff8a4c",
           500: "#ff7a33",
@@ -30,21 +48,9 @@ const config: Config = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
