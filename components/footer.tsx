@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-orange-500 mb-4">Adams</h3>
+            <h3 className="text-2xl font-bold text-orange-500 mb-4">Weaver</h3>
             <p className="text-sm text-slate-300 mb-4">STRUCTURAL AND CIVIL ENGINEERING</p>
             <p className="text-slate-400">
               Professional engineering services delivering innovative and sustainable solutions for projects of all
@@ -95,21 +95,19 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-orange-500 mr-3 mt-0.5" />
                 <span className="text-slate-400">
-                  123 Engineering Way
+                  Unit 7/40D Wallace Ave
                   <br />
-                  Sydney, NSW 2000
-                  <br />
-                  Australia
+                  Point Cook VIC 3030
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-orange-500 mr-3" />
-                <span className="text-slate-400">+61 2 1234 5678</span>
+                <span className="text-slate-400">03 9959 8890</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-orange-500 mr-3" />
-                <a href="mailto:info@adamseng.com" className="text-slate-400 hover:text-orange-400 transition-colors">
-                  info@adamseng.com
+                <a href="mailto:info@weaverdesigns.com.au" className="text-slate-400 hover:text-orange-400 transition-colors">
+                  info@weaverdesigns.com.au
                 </a>
               </li>
             </ul>
@@ -117,7 +115,13 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-500 text-sm">© {new Date().getFullYear()} Adams Engineering. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+            <p className="text-slate-500 text-sm">© {new Date().getFullYear()} Weaver Design Consulting Engineers. All rights reserved.</p>
+            <span className="hidden md:inline text-slate-600">•</span>
+            <a href="https://www.buzzingbeetech.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-accent text-sm transition-colors">
+              Website by Buzzing Bee Tech
+            </a>
+          </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-slate-400 hover:text-orange-400 transition-colors">
               <span className="sr-only">LinkedIn</span>

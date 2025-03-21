@@ -7,8 +7,8 @@ import { OpportunitiesSection } from "@/components/sections/career/opportunities
 import { JoinTeamSection } from "@/components/sections/career/join-team"
 
 export const metadata: Metadata = {
-  title: "Career | Adams Engineering",
-  description: "Join our team at Adams Engineering and unlock your full career potential while making a lasting impact in the industry.",
+  title: "Careers | Weaver Design Consulting Engineers",
+  description: "Join our team at Weaver Design Consulting Engineers and be part of innovative engineering solutions.",
 }
 
 export default function CareerPage() {

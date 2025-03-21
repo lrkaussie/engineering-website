@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const projects = [
   {
@@ -60,7 +61,13 @@ export function ProjectsSection() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Button size="lg">View All Projects</Button>
+          <Button 
+            size="lg" 
+            className="bg-secondary hover:bg-secondary-dark text-white transition-colors"
+            asChild
+          >
+            <Link href="/projects">View All Projects</Link>
+          </Button>
         </div>
       </div>
     </section>

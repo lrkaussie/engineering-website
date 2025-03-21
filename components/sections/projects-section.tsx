@@ -2,6 +2,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { featuredProjects } from "@/config/site"
 import { ProjectCard } from "@/components/ui/project-card"
+import { Button } from "@/components/ui/button"
 
 export function ProjectsSection() {
   return (
@@ -14,13 +15,16 @@ export function ProjectsSection() {
               Explore our portfolio of successful engineering projects across various sectors.
             </p>
           </div>
-          <Link
-            href="/projects"
-            className="inline-flex items-center text-orange-500 hover:text-orange-600 mt-4 md:mt-0 text-sm md:text-base"
+          <Button 
+            variant="default" 
+            className="mt-4 md:mt-0 bg-secondary hover:bg-secondary-dark text-white transition-colors" 
+            asChild
           >
-            View All Projects
-            <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
-          </Link>
+            <Link href="/projects" className="inline-flex items-center">
+              View All Projects
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+            </Link>
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

@@ -1,18 +1,18 @@
 // Site configuration
 export const siteConfig = {
-  name: "Adams Engineering",
+  name: "Weaver Design Consulting Engineers",
   description: "Professional engineering services for residential, commercial, and healthcare projects",
-  url: "https://adamseng.com",
-  ogImage: "https://adamseng.com/og.jpg",
+  url: "https://weaverdesigns.com.au",
+  ogImage: "https://weaverdesigns.com.au/og.jpg",
   links: {
-    twitter: "https://twitter.com/adamsengineering",
-    github: "https://github.com/adamsengineering",
-    linkedin: "https://linkedin.com/company/adamsengineering",
+    twitter: "https://twitter.com/weaverdesigns",
+    github: "https://github.com/weaverdesigns",
+    linkedin: "https://linkedin.com/company/weaverdesigns",
   },
   contact: {
-    email: "info@adamseng.com",
-    phone: "+61 2 1234 5678",
-    address: "123 Engineering Way, Sydney, NSW 2000, Australia",
+    email: "info@weaverdesigns.com.au",
+    phone: "03 9959 8890",
+    address: "Unit 7/40D Wallace Ave, Point Cook VIC 3030",
   },
 }
 

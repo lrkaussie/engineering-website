@@ -1,0 +1,12 @@
+.animatedText {
+  display: inline-block;
+  white-space: pre;
+  transition: opacity 0.3s ease-out;
+}
+
+.cursor {
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+  padding-right: 2px;
+}
+
+/* Remove the blink animation */ 

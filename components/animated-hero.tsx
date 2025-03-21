@@ -7,6 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import TypewriterText from "./typewriter-text"
+import { Button } from "@/components/ui/button"
 
 export default function AnimatedHero() {
   const [loaded, setLoaded] = useState(false)
@@ -94,8 +95,8 @@ export default function AnimatedHero() {
         <header className="w-full py-6 px-4 md:px-8">
           <div className="container mx-auto flex justify-between items-center">
             <Link href="/" className="flex items-center">
-              <div className="text-orange-500 font-bold text-3xl md:text-4xl">Adams</div>
-              <span className="sr-only">Adams Engineering</span>
+              <div className="text-orange-500 font-bold text-3xl md:text-4xl">Weaver</div>
+              <span className="sr-only">Weaver Design Consulting Engineers</span>
             </Link>
             <nav className="hidden md:flex space-x-8">
               <Link href="/about" className="text-white hover:text-orange-400 transition-colors">
@@ -138,7 +139,7 @@ export default function AnimatedHero() {
               className="text-white text-lg md:text-xl mb-4 opacity-0 animate-fadeIn"
               style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
             >
-              ADAMS ENGINEERING
+              WEAVER DESIGN CONSULTING ENGINEERS
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               <span
@@ -164,10 +165,10 @@ export default function AnimatedHero() {
               </div>
             </h1>
             <p
-              className="text-white text-lg md:text-xl max-w-2xl opacity-0 animate-fadeIn"
+              className="text-white text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl opacity-0 animate-fadeIn"
               style={{ animationDelay: "1.6s", animationFillMode: "forwards" }}
             >
-              At Adams Consulting Engineers, we use our engineering expertise, collaborative abilities, and advanced
+              At Weaver Design Consulting Engineers, we use our engineering expertise, collaborative abilities, and advanced
               industry technology to bring designs to life, from small residential developments to large commercial,
               retail, and health projects.
             </p>
@@ -175,13 +176,12 @@ export default function AnimatedHero() {
               className="mt-8 opacity-0 animate-fadeIn"
               style={{ animationDelay: "1.8s", animationFillMode: "forwards" }}
             >
-              <Link
-                href="/services"
-                className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-colors"
-              >
-                Our Services
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              <Button asChild>
+                <Link href="/services">
+                  Our Services
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

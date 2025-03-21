@@ -3,31 +3,10 @@ import { MapPin, Phone, Mail } from "lucide-react"
 const locations = [
   {
     city: "Melbourne",
-    address: "Level 10, 620 Bourke Street",
-    suburb: "Melbourne, Victoria, 3000",
-    phone: "+61 3 8600 9700",
-    email: "admin@adamseng.com.au"
-  },
-  {
-    city: "Sydney",
-    address: "4A1, 410 Elizabeth Street",
-    suburb: "Surry Hills, NSW 2010",
-    phone: "+61 2 9222 9970",
-    email: "admin@adamseng.com.au"
-  },
-  {
-    city: "Geelong",
-    address: "Suite 6/ 18-20 Riversdale Road",
-    suburb: "Newtown, VIC 3220",
-    phone: "+61 3 5221 9088",
-    email: "admin@adamseng.com.au"
-  },
-  {
-    city: "Ballarat",
-    address: "123 Doveton St N",
-    suburb: "Ballarat Central VIC 3350",
-    phone: "+61 421 673 073",
-    email: "ballaratcollective@adamseng.com.au"
+    address: "Unit 7/40D Wallace Ave",
+    suburb: "Point Cook VIC 3030",
+    phone: "03 9959 8890",
+    email: "info@weaverdesigns.com.au"
   }
 ]
 
@@ -36,12 +15,12 @@ export function ContactLocations() {
     <section className="py-24 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Locations</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Location</h2>
           <p className="text-xl text-secondary">
-            Find us at any of our offices across Australia
+            Visit us at our office
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 max-w-lg mx-auto">
           {locations.map((location) => (
             <div 
               key={location.city}

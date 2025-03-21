@@ -8,10 +8,10 @@ export function JoinTeamSection() {
     <section className="py-24 bg-white" id="apply">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Join Our Team</h2>
-            <p className="text-xl text-gray-600">
-              Take the next step in your career with Adams Engineering
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
+            <p className="text-lg text-gray-600">
+              Take the next step in your career with Weaver Design Consulting Engineers
             </p>
           </div>
           <form className="space-y-6">
@@ -52,7 +52,7 @@ export function JoinTeamSection() {
             <Button 
               type="submit" 
               size="lg"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white"
+              className="w-full"
             >
               Submit Application
             </Button>
