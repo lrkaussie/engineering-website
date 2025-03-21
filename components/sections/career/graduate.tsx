@@ -35,7 +35,6 @@ export function GraduateSection() {
             </div>
             <Button 
               size="lg" 
-              className="bg-orange-500 hover:bg-orange-600 text-white"
               asChild
             >
               <a href="#apply">Apply Now</a>

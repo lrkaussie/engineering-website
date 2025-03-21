@@ -67,7 +67,6 @@ export function ProjectsGrid() {
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
               onClick={() => setSelectedCategory(category)}
-              className={selectedCategory === category ? "bg-orange-500 hover:bg-orange-600" : ""}
             >
               {category}
             </Button>
@@ -98,10 +97,7 @@ export function ProjectsGrid() {
                 </div>
                 <p className="text-gray-600 mb-2">{project.location}</p>
                 <p className="text-gray-700">{project.description}</p>
-                <Button 
-                  className="mt-4 w-full bg-orange-500 hover:bg-orange-600 text-white"
-                  asChild
-                >
+                <Button asChild className="mt-4 w-full">
                   <a href={`/projects/${project.id}`}>View Project</a>
                 </Button>
               </div>

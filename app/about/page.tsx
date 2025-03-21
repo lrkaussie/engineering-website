@@ -1,18 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { AboutHero } from "@/components/sections/about/hero"
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen">
-      {/* Header */}
-      <header className="bg-slate-900 py-20">
-        <div className="container mx-auto px-4 md:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
-          <p className="text-slate-300 max-w-2xl text-lg">
-            Learn about our company, our values, and our approach to engineering excellence.
-          </p>
-        </div>
-      </header>
+      <AboutHero />
 
       {/* Company Overview */}
       <section className="py-16 md:py-24">
@@ -21,7 +15,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Company</h2>
               <p className="text-slate-700 mb-4">
-                Adams Engineering is a leading structural and civil engineering consultancy with over 20 years of
+                Weaver Design Consulting Engineers is a leading structural and civil engineering consultancy with over 20 years of
                 experience in the industry. We specialize in providing innovative engineering solutions for projects of
                 all sizes, from residential developments to large commercial and healthcare facilities.
               </p>
@@ -37,8 +31,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px]">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Engineering team working"
+                src="/images/sections/company.jpg"
+                alt="Engineering team collaborating on project designs"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -159,8 +153,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative h-[400px] lg:h-[500px]">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Engineering design process"
+                src="/images/sections/approach.jpg"
+                alt="Engineering team collaborating on design process and planning"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -168,7 +162,7 @@ export default function AboutPage() {
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-bold mb-6">Our Approach</h2>
               <p className="text-slate-700 mb-4">
-                At Adams Engineering, we follow a comprehensive approach to every project, ensuring that all aspects of
+                At Weaver Design Consulting Engineers, we follow a comprehensive approach to every project, ensuring that all aspects of
                 the design process are carefully considered and executed. Our methodology combines technical expertise
                 with creative problem-solving to deliver solutions that are both practical and innovative.
               </p>
@@ -231,15 +225,19 @@ export default function AboutPage() {
             Contact our team today to discuss your project requirements and discover how our engineering expertise can
             help bring your vision to life.
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md transition-colors"
-          >
-            Get in Touch
-          </Link>
+          <Button asChild size="lg">
+            <Link href="/contact">
+              Get in Touch
+            </Link>
+          </Button>
         </div>
       </section>
     </main>
   )
 }
+
+export const metadata = {
+  title: "About | Weaver Design Consulting Engineers",
+  description: "Learn about Weaver Design Consulting Engineers and our commitment to excellence in engineering solutions.",
+};
 

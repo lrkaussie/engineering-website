@@ -4,8 +4,8 @@ import { ContactForm } from "@/components/sections/contact/form"
 import { ContactLocations } from "@/components/sections/contact/locations"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Adams Engineering",
-  description: "Get in touch with Adams Engineering. Find our office locations and contact details, or send us a message.",
+  title: "Contact Us | Weaver Design Consulting Engineers",
+  description: "Get in touch with Weaver Design Consulting Engineers for your engineering needs.",
 }
 
 export default function ContactPage() {

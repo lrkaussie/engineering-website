@@ -3,8 +3,8 @@ import { TeamHero } from "@/components/sections/team/hero"
 import { TeamGrid } from "@/components/sections/team/team-grid"
 
 export const metadata: Metadata = {
-  title: "Our Team | Adams Engineering",
-  description: "Meet our expert team of engineers, designers, and professionals at Adams Engineering.",
+  title: "Our Team | Weaver Design Consulting Engineers",
+  description: "Meet the talented professionals at Weaver Design Consulting Engineers.",
 }
 
 export default function TeamPage() {

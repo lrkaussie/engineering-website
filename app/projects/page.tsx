@@ -3,8 +3,8 @@ import { ProjectsHero } from "@/components/sections/projects/hero"
 import { ProjectsGrid } from "@/components/sections/projects/grid"
 
 export const metadata: Metadata = {
-  title: "Projects | Adams Engineering",
-  description: "Explore our diverse portfolio of engineering projects across various sectors including commercial, residential, and infrastructure.",
+  title: "Projects | Weaver Design Consulting Engineers",
+  description: "Explore the innovative projects completed by Weaver Design Consulting Engineers.",
 }
 
 export default function ProjectsPage() {

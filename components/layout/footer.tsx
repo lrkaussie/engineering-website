@@ -2,14 +2,14 @@ import Link from "next/link"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { navLinks, siteConfig } from "@/config/site"
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 md:px-8 py-8 md:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl md:text-2xl font-bold text-orange-500 mb-3 md:mb-4">Adams</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-orange-500 mb-3 md:mb-4">Weaver</h3>
             <p className="text-xs md:text-sm text-slate-300 mb-3 md:mb-4">STRUCTURAL AND CIVIL ENGINEERING</p>
             <p className="text-slate-400 text-sm md:text-base">
               Professional engineering services delivering innovative and sustainable solutions for projects of all
@@ -88,12 +88,9 @@ export function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-4 w-4 md:h-5 md:w-5 text-orange-500 mr-2 md:mr-3 mt-0.5" />
                 <span className="text-slate-400 text-sm md:text-base">
-                  {siteConfig.contact.address.split(", ").map((line, i) => (
-                    <span key={i}>
-                      {line}
-                      {i < siteConfig.contact.address.split(", ").length - 1 && <br />}
-                    </span>
-                  ))}
+                  Unit 7/40D Wallace Ave
+                  <br />
+                  Point Cook VIC 3030
                 </span>
               </li>
               <li className="flex items-center">
@@ -113,10 +110,14 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-500 text-xs md:text-sm">
-            © {new Date().getFullYear()} Adams Engineering. All rights reserved.
-          </p>
+        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+            <p className="text-slate-400 text-sm">© {new Date().getFullYear()} Weaver Design Consulting Engineers. All rights reserved.</p>
+            <span className="hidden md:inline text-slate-600">•</span>
+            <a href="https://www.buzzingbeetech.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent text-sm transition-colors">
+              Website by Buzzing Bee Tech
+            </a>
+          </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             {Object.entries(siteConfig.links).map(([platform, url]) => (
               <a key={platform} href={url} className="text-slate-400 hover:text-orange-400 transition-colors">

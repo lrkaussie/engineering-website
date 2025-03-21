@@ -57,10 +57,7 @@ export function OpportunitiesSection() {
                 </div>
               </div>
               <p className="text-gray-600 mb-6">{job.description}</p>
-              <Button 
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white"
-                asChild
-              >
+              <Button asChild className="w-full">
                 <a href="#apply">Apply Now</a>
               </Button>
             </div>

@@ -49,13 +49,11 @@ export function ContactForm() {
                 className="border-secondary focus:border-primary"
               />
             </div>
-            <Button 
-              type="submit" 
-              size="lg"
-              className="w-full bg-accent hover:bg-secondary text-primary"
-            >
-              Send Message
-            </Button>
+            <div>
+              <Button type="submit" className="w-full">
+                Send Message
+              </Button>
+            </div>
           </form>
         </div>
       </div>

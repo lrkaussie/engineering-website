@@ -10,24 +10,31 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Playfair Display', 'serif'],
+        body: ['Lato', 'sans-serif'],
+      },
       colors: {
-        // Primary Color - Deep Purple
+        // Primary Color - Glossy Black
         primary: {
-          DEFAULT: "#3C3359",
-          dark: "#2F2F58", // Deep Navy Purple
+          DEFAULT: "#000000",
         },
-        // Secondary Color - Muted Blue-Grey
+        // Secondary Color - Blue
         secondary: {
-          DEFAULT: "#626787",
+          DEFAULT: "#2F2F58",
+          light: "#3F3F68",
+          dark: "#1F1F48",
         },
-        // Accent Color - Soft Beige
+        // Accent Color - Beige
         accent: {
           DEFAULT: "#F2E8E1",
+          light: "#FFF5EE",
+          dark: "#E2D8D1",
         },
         // Base colors
         base: {
           light: "#FFFFFF",
-          dark: "#2F2F58",
+          dark: "#000000",
         },
         orange: {
           400: "#ff8a4c",
