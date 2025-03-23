@@ -95,7 +95,7 @@ export default function AnimatedHero() {
         <header className="w-full py-6 px-4 md:px-8">
           <div className="container mx-auto flex justify-between items-center">
             <Link href="/" className="flex items-center">
-              <div className="text-orange-500 font-bold text-3xl md:text-4xl">Weaver</div>
+              <div className="text-orange-500 font-bold text-3xl md:text-4xl">Weaver Design Consulting Engineers</div>
               <span className="sr-only">Weaver Design Consulting Engineers</span>
             </Link>
             <nav className="hidden md:flex space-x-8">
