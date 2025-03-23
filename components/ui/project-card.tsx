@@ -11,9 +11,15 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, image, slug }: ProjectCardProps) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md">
-      <div className="relative h-48 sm:h-56 md:h-64">
-        <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
+    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div className="relative aspect-[3/2]">
+        <Image 
+          src={image} 
+          alt={title} 
+          fill 
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       <div className="p-4 md:p-6">
         <h3 className="text-lg md:text-xl font-bold mb-2">{title}</h3>

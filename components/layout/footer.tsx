@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl md:text-2xl font-bold text-orange-500 mb-3 md:mb-4">Weaver</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-orange-500 mb-3 md:mb-4">Weaver Design Consulting Engineers</h3>
             <p className="text-xs md:text-sm text-slate-300 mb-3 md:mb-4">STRUCTURAL AND CIVIL ENGINEERING</p>
             <p className="text-slate-400 text-sm md:text-base">
               Professional engineering services delivering innovative and sustainable solutions for projects of all

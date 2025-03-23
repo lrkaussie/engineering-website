@@ -59,20 +59,20 @@ export const featuredProjects = [
   {
     title: "Commercial Tower",
     description: "Structural and civil engineering for a 25-story commercial tower in the city center.",
-    image: "/placeholder.svg?height=400&width=600",
-    slug: "commercial-tower",
+    image: "https://images.unsplash.com/photo-1577587230708-187fdbef4d91?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "commercial-tower-development",
   },
   {
     title: "Residential Complex",
     description: "Complete engineering solutions for a modern residential development with 120 units.",
-    image: "/placeholder.svg?height=400&width=600",
-    slug: "residential-complex",
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "residential-complex-melbourne",
   },
   {
     title: "Healthcare Facility",
     description: "Specialized engineering for a state-of-the-art medical center with complex requirements.",
-    image: "/placeholder.svg?height=400&width=600",
-    slug: "healthcare-facility",
+    image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "healthcare-facility-perth",
   },
 ]
 

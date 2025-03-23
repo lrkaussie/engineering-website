@@ -11,6 +11,7 @@ type Project = {
   location: string
   description: string
   image: string
+  slug: string
 }
 
 const projects: Project[] = [
@@ -20,7 +21,8 @@ const projects: Project[] = [
     category: "Commercial",
     location: "Sydney CBD",
     description: "A 40-story commercial tower featuring state-of-the-art structural design and sustainable engineering solutions.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1577587230708-187fdbef4d91?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "commercial-tower-development"
   },
   {
     id: 2,
@@ -28,7 +30,8 @@ const projects: Project[] = [
     category: "Residential",
     location: "Melbourne",
     description: "Modern residential development with innovative structural solutions and sustainable design features.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "residential-complex-melbourne"
   },
   {
     id: 3,
@@ -36,7 +39,8 @@ const projects: Project[] = [
     category: "Infrastructure",
     location: "Brisbane",
     description: "Major bridge infrastructure project connecting communities with cutting-edge engineering.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1473615695634-d284ec918736?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "infrastructure-bridge-brisbane"
   },
   {
     id: 4,
@@ -44,7 +48,8 @@ const projects: Project[] = [
     category: "Healthcare",
     location: "Perth",
     description: "State-of-the-art healthcare facility designed with advanced engineering solutions.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=80&w=1200&h=800",
+    slug: "healthcare-facility-perth"
   },
 ]
 
@@ -80,12 +85,14 @@ export function ProjectsGrid() {
               key={project.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="relative h-64">
+              <div className="relative aspect-[3/2] w-full">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={project.id <= 2}
                 />
               </div>
               <div className="p-6">
@@ -98,7 +105,7 @@ export function ProjectsGrid() {
                 <p className="text-gray-600 mb-2">{project.location}</p>
                 <p className="text-gray-700">{project.description}</p>
                 <Button asChild className="mt-4 w-full">
-                  <a href={`/projects/${project.id}`}>View Project</a>
+                  <a href={`/projects/${project.slug}`}>View Project</a>
                 </Button>
               </div>
             </div>

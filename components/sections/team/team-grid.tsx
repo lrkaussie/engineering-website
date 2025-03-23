@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "John Smith",
     role: "Principal Engineer",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800&h=1000",
     qualifications: "BE (Civil), MIEAust CPEng NER APEC",
     description: "John has over 20 years of experience in structural and civil engineering, leading complex projects across commercial, residential, and infrastructure sectors.",
     linkedin: "https://linkedin.com/in/johnsmith",
@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Sarah Johnson",
     role: "Senior Structural Engineer",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800&h=1000",
     qualifications: "BE (Structural), PhD, MIEAust",
     description: "Sarah specializes in advanced structural analysis and has led numerous high-rise and complex building projects.",
     linkedin: "https://linkedin.com/in/sarahjohnson",
@@ -24,7 +24,7 @@ const teamMembers = [
   {
     name: "Michael Chen",
     role: "Civil Engineer",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800&h=1000",
     qualifications: "BE (Civil), ME (Geotechnical), CPEng",
     description: "Michael brings extensive experience in civil and geotechnical engineering, specializing in infrastructure projects.",
     linkedin: "https://linkedin.com/in/michaelchen",
@@ -33,7 +33,7 @@ const teamMembers = [
   {
     name: "Emma Wilson",
     role: "Project Manager",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800&h=1000",
     qualifications: "BE (Civil & Structural)",
     description: "Emma focuses on delivering innovative solutions for commercial and residential projects, with expertise in sustainable design.",
     linkedin: "https://linkedin.com/in/emmawilson",
@@ -51,12 +51,14 @@ export function TeamGrid() {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="relative h-64 w-full">
+              <div className="relative aspect-[4/5] w-full">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index < 2}
                 />
               </div>
               <div className="p-6">
