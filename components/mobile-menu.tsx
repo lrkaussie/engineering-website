@@ -42,7 +42,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         >
           Projects
         </Link>
-        <Link href="/contact" className="text-white text-2xl hover:text-orange-400 transition-colors" onClick={onClose}>
+        <Link href="/contact-us" className="text-white text-2xl hover:text-orange-400 transition-colors" onClick={onClose}>
           Contact Us
         </Link>
       </nav>

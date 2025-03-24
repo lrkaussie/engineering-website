@@ -226,7 +226,7 @@ export default function AboutPage() {
             help bring your vision to life.
           </p>
           <Button asChild size="lg">
-            <Link href="/contact">
+            <Link href="/contact-us">
               Get in Touch
             </Link>
           </Button>
