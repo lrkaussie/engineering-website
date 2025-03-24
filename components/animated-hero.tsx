@@ -8,6 +8,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import TypewriterText from "./typewriter-text"
 import { Button } from "@/components/ui/button"
+import { MobileMenu } from "@/components/layout/mobile-menu"
 
 export default function AnimatedHero() {
   const [loaded, setLoaded] = useState(false)
@@ -114,21 +115,11 @@ export default function AnimatedHero() {
               <Link href="/projects" className="text-white hover:text-orange-400 transition-colors">
                 Projects
               </Link>
-              <Link href="/contact" className="text-white hover:text-orange-400 transition-colors">
+              <Link href="/contact-us" className="text-white hover:text-orange-400 transition-colors">
                 Contact Us
               </Link>
             </nav>
-            <button className="md:hidden text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            <MobileMenu />
           </div>
         </header>
 

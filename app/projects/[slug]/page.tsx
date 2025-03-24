@@ -104,7 +104,7 @@ export default function ProjectPage({ params }: Props) {
               {project.description}
             </p>
             <Button asChild>
-              <a href="/contact">Discuss Your Project</a>
+              <a href="/contact-us">Discuss Your Project</a>
             </Button>
           </div>
         </div>
